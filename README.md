@@ -4,8 +4,9 @@ playing with Python on ESP8266 chips, Sonoff &amp; wemos boards
 
 
 ## Preparation
-1. get `esptool` from github
-2. download 
+1. Clone this directory
+2. run `INIT` to install python dependencies and init submodules
+
 
 
 
