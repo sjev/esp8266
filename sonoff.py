@@ -1,13 +1,15 @@
 # Sonoff board classes
 
 import machine
+from machine import Pin
 
 class Basic:
     """ Sonoff basic class """
 
     def __init__(self):
 
-        self.led = machine.Pin(13, machine.Pin.OUT)
+        self.led = Pin(13, Pin.OUT)
+        self.button = Pin(0,Pin.IN)
 
     def ledOff(self):
         self.led.value(1)
@@ -16,4 +18,8 @@ class Basic:
         self.led.value(0)
 
     def ledToggle(self):
-        self.led.value(1-self.led.value())        
+        self.led.value(1-self.led.value())
+
+    def setButtonCallback(self, callback):
+        """ add interrupt for button pressed """
+        self.button.irq(trigger=Pin.IRQ_FALLING, handler=callback)
