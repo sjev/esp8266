@@ -44,6 +44,7 @@ see [forum](https://forum.micropython.org/viewtopic.php?f=16&t=2827&start=30#p19
 ### temperature sensing
 The sensor supplied with TH10 is DS18B20 . Opitonal is AM2301.
 To read DS18B20, use [ds18x20.py](https://github.com/micropython/micropython/blob/master/drivers/onewire/ds18x20.py) module. A reference for usagecan be found in older [docs](http://docs.micropython.org/en/v1.8.2/esp8266/esp8266/tutorial/onewire.html)
+See also DS18B20 [application](https://diyprojects.io/micropython-project-several-ds18b20-probes-publish-measurements-domoticz/)
 
 
 
