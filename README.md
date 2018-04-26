@@ -40,6 +40,11 @@ see [forum](https://forum.micropython.org/viewtopic.php?f=16&t=2827&start=30#p19
 * [MicroPython documentation](https://docs.micropython.org/en/latest/esp8266/index.html)
 * [GPIO locations](https://github.com/arendst/Sonoff-Tasmota/wiki/GPIO-Locations)
 
+### temperature sensing
+The sensor supplied with TH10 is DS18B20 . Opitonal is AM2301.
+To read DS18B20, use [ds18x20.py](https://github.com/micropython/micropython/blob/master/drivers/onewire/ds18x20.py) module. A reference for usagecan be found in older [docs](http://docs.micropython.org/en/v1.8.2/esp8266/esp8266/tutorial/onewire.html)
+
+
 ### git
  * [git submodules](https://stackoverflow.com/questions/2140985/how-to-set-up-a-git-project-to-use-an-external-repo-submodule)
  * [ignore changes](https://content.pivotal.io/blog/ignoring-tracked-files-in-git)
