@@ -4,8 +4,9 @@ playing with Python on ESP8266 chips, Sonoff &amp; wemos boards
 
 
 ## Preparation
-1. get `esptool` from github
-2. download 
+1. Clone this directory
+2. run `INIT` to install python dependencies and init submodules
+
 
 
 
@@ -38,3 +39,6 @@ see [forum](https://forum.micropython.org/viewtopic.php?f=16&t=2827&start=30#p19
 
 * [MicroPython documentation](https://docs.micropython.org/en/latest/esp8266/index.html)
 * [GPIO locations](https://github.com/arendst/Sonoff-Tasmota/wiki/GPIO-Locations)
+
+### general
+ * [git submodules](https://stackoverflow.com/questions/2140985/how-to-set-up-a-git-project-to-use-an-external-repo-submodule)
