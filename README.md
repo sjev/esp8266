@@ -39,6 +39,14 @@ see [forum](https://forum.micropython.org/viewtopic.php?f=16&t=2827&start=30#p19
 
 * [MicroPython documentation](https://docs.micropython.org/en/latest/esp8266/index.html)
 * [GPIO locations](https://github.com/arendst/Sonoff-Tasmota/wiki/GPIO-Locations)
+* [TH10 jack pinout](http://tinkerman.cat/sonoff-th10-th16-sensors-displays-actuators/#lightbox-gallery-F3O8/8/)
+
+### temperature sensing
+The sensor supplied with TH10 is DS18B20 . Opitonal is AM2301.
+To read DS18B20, use [ds18x20.py](https://github.com/micropython/micropython/blob/master/drivers/onewire/ds18x20.py) module. A reference for usagecan be found in older [docs](http://docs.micropython.org/en/v1.8.2/esp8266/esp8266/tutorial/onewire.html)
+See also DS18B20 [application](https://diyprojects.io/micropython-project-several-ds18b20-probes-publish-measurements-domoticz/)
+
+
 
 ### git
  * [git submodules](https://stackoverflow.com/questions/2140985/how-to-set-up-a-git-project-to-use-an-external-repo-submodule)
