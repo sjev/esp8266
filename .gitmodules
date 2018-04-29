@@ -2,3 +2,6 @@
 	path = webrepl
 	url = git@github.com:micropython/webrepl.git
 
+[submodule "Sonoff-Tasmota"]
+	path = Sonoff-Tasmota
+	url = git@github.com:arendst/Sonoff-Tasmota.git
