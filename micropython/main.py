@@ -8,7 +8,10 @@ def buttonPressed(p):
 
 board.setButtonCallback(buttonPressed)
 
+import read_temperature
+
 while True:
     board.ledToggle()
     utime.sleep(1)
     print('.',end='')
+    read_temperature.readTemperature()
