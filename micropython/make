@@ -1,0 +1,13 @@
+#!/bin/bash
+
+PORT='/dev/ttyUSB0'
+
+FILES=('boot.py' 'main.py' 'config.py' 'esplib.py' 'boards.py')
+
+# get number of elements in the array
+NR_FILES=${#FILES[@]}
+
+for ((i=0; i<$NR_FILES; i++)); do
+    echo "Uploading ${FILES[${i}]}"
+    ampy -p $PORT put ${FILES[${i}]}
+done

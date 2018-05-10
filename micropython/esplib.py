@@ -10,7 +10,7 @@ import machine
 import network
 import time
 
-board = config.board()
+board = config.board
 
 def connectWifi(networks=config.networks):
     """ connect to a wifi network """
