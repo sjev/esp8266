@@ -26,3 +26,17 @@ class Sonoff:
         """ add interrupt for button pressed """
         self.button.irq(trigger=Pin.IRQ_FALLING, handler=callback)
 
+class WemosD1:
+  
+    def __init__(self):
+
+        self.led = Pin(2, Pin.OUT)
+
+    def ledOff(self):
+        self.led.value(1)
+
+    def ledOn(self):
+        self.led.value(0)
+
+    def ledToggle(self):
+        self.led.value(1-self.led.value())
