@@ -1,10 +1,12 @@
-# Sonoff board classes
+"""
+Board definitions
+"""
 
-import machine
+# convenience imports
 from machine import Pin
 
-class Basic:
-    """ Sonoff basic class """
+class Sonoff:
+    """ Sonoff board """
 
     def __init__(self):
 
@@ -23,3 +25,4 @@ class Basic:
     def setButtonCallback(self, callback):
         """ add interrupt for button pressed """
         self.button.irq(trigger=Pin.IRQ_FALLING, handler=callback)
+
